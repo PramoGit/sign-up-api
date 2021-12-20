@@ -54,7 +54,7 @@ router.post("/sign-up", (req, res) => {
             newUser.save(function (err, result) {
               if (err) {
                 res.status(400).json({
-                  message: "Error Occured, Can't register user. Maybe You are already register with same name (Try to change fullname entity.)",
+                  message: "Error Occured, Can't register user.",
                 });
               } else {
                 res.status(201).json({
